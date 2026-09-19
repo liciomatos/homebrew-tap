@@ -5,21 +5,21 @@
 class PgdbaCli < Formula
   desc "Terminal UI for PostgreSQL DBAs — interactive diagnostics directly in the terminal."
   homepage "https://github.com/liciomatos/pgdba"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/liciomatos/pgdba/releases/download/v0.5.0/pgdba-cli_0.5.0_darwin_amd64.tar.gz"
-      sha256 "3dbfb39a12c350672131a9e9aaa8d109bd7e6f2989e24a61c40c05695597707f"
+      url "https://github.com/liciomatos/pgdba/releases/download/v0.6.0/pgdba-cli_0.6.0_darwin_amd64.tar.gz"
+      sha256 "c615fe3f85dd99e458e9f8e7c041149482679363af1f952b6275f4e7e0556ae1"
 
       define_method(:install) do
         bin.install "pgdba-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/liciomatos/pgdba/releases/download/v0.5.0/pgdba-cli_0.5.0_darwin_arm64.tar.gz"
-      sha256 "d5cd7e6ea6f93c5ab5693bf786650fc43a98696dc3dad8067e599d06523fbe89"
+      url "https://github.com/liciomatos/pgdba/releases/download/v0.6.0/pgdba-cli_0.6.0_darwin_arm64.tar.gz"
+      sha256 "c107999df8e989c0f5b0f0dfdecfcbccffd1af8a249624fe545c508ac563e5f9"
 
       define_method(:install) do
         bin.install "pgdba-cli"
@@ -29,15 +29,15 @@ class PgdbaCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/liciomatos/pgdba/releases/download/v0.5.0/pgdba-cli_0.5.0_linux_amd64.tar.gz"
-      sha256 "a406830506e99df624c32e280da793a7c18e56a8bfaaf2c5a1b3cb6fba424aec"
+      url "https://github.com/liciomatos/pgdba/releases/download/v0.6.0/pgdba-cli_0.6.0_linux_amd64.tar.gz"
+      sha256 "5762c417e741c882ba0e2375c5ae612ae3e19040e3996ff59dd1d1b5352bee68"
       define_method(:install) do
         bin.install "pgdba-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/liciomatos/pgdba/releases/download/v0.5.0/pgdba-cli_0.5.0_linux_arm64.tar.gz"
-      sha256 "591f2e43090a2f18c8c44847bf4c8cbb6e02f912c4d3e77fd0f315db0a0b4648"
+      url "https://github.com/liciomatos/pgdba/releases/download/v0.6.0/pgdba-cli_0.6.0_linux_arm64.tar.gz"
+      sha256 "1256c46f46a32297e3411464e6d06a7cc06ea6fa668fd53d77e6f354374b8b82"
       define_method(:install) do
         bin.install "pgdba-cli"
       end
